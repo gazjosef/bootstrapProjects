@@ -198,11 +198,46 @@
                   </footer>
                 </blockquote>
               </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, expedita.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sam Smith From
+                    <cite title="company 2">Company 2</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, expedita.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Meghan Williams From
+                    <cite title="company 3">Company 3</cite>
+                  </footer>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -233,6 +268,12 @@
     <script>
       // Get current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      $(".slider").slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      });
     </script>
   </body>
 </html>
