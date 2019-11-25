@@ -312,6 +312,37 @@
       </div>
     </section>
 
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="text-center p-4 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sign Up For Our Newsletter</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis temporibus quisquam officiis iusto. Nesciunt
+              consequatur incidunt sequi harum officiis facilis!
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Name"
+              />
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Email"
+              />
+              <button class="btn btn-primary mb-2">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- VIDEO MODAL -->
     <div id="videoModal" class="modal fade">
       <div class="modal-dialog">
@@ -363,7 +394,7 @@
       // Get current year for the copyright
       $("#year").text(new Date().getFullYear());
 
-      // Configure slider
+      // Configure Slider
       $(".carousel").carousel({
         interval: 6000,
         pause: "hover"
@@ -375,7 +406,7 @@
         $(this).ekkoLightbox();
       });
 
-      // Video play
+      // Video Play
       $(function() {
         // Auto play modal video
         $(".video").click(function() {
