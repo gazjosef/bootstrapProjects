@@ -91,7 +91,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <a href="#" class="btn btn-light btn-block">
+            <a href="index.html" class="btn btn-light btn-block">
               <i class="fas fa-arrow-left"></i> Back To Dashboard
             </a>
           </div>
@@ -118,36 +118,39 @@
               <div class="card-header">
                 <h4>Edit Profile</h4>
               </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="Brad Traversy"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="test@test.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea class="form-control" name="editor1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quidem provident voluptatibus ullam aliquid adipisci debitis dolor repellendus quasi minus tempora, aperiam ad veniam possimus saepe ducimus? Eos excepturi nemo odio velit animi consequatur dignissimos ipsam. Ea ut nostrum tempora?
+                    </textarea>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-center bg-primary text-white mb-3">
-              <div class="card-body">
-                <h3>Posts</h3>
-                <h4 class="display-4"><i class="fas fa-pencil-alt"></i> 6</h4>
-                <a href="posts.html" class="btn btn-outline-light btn-sm"
-                  >View</a
-                >
-              </div>
-            </div>
-            <div class="card text-center bg-success text-white mb-3">
-              <div class="card-body">
-                <h3>Categories</h3>
-                <h4 class="display-4"><i class="fas fa-folder"></i> 4</h4>
-                <a href="categories.html" class="btn btn-outline-light btn-sm"
-                  >View</a
-                >
-              </div>
-            </div>
-            <div class="card text-center bg-warning text-white mb-3">
-              <div class="card-body">
-                <h3>Users</h3>
-                <h4 class="display-4"><i class="fas fa-users"></i> 4</h4>
-                <a href="users.html" class="btn btn-outline-light btn-sm"
-                  >View</a
-                >
-              </div>
-            </div>
+            <h3>Your Avatar</h3>
+            <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3" />
+            <button class="btn btn-primary btn-block">Edit Image</button>
+            <button class="btn btn-danger btn-block">Delete Image</button>
           </div>
         </div>
       </div>
