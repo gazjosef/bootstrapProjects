@@ -141,6 +141,16 @@
         </div>
       </div>
 
+      <!-- RESUME -->
+      <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+          <h2>My Resume</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            ipsa!
+          </p>
+        </div>
+      </div>
       <!-- FOOTER -->
       <footer id="main-footer" class="p-5 bg-dark text-white">
         <div class="row">
@@ -168,8 +178,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // Get current year for the copyright
-      $("#year").text(new Date().getFullYear());
+      $(".port-item").click(function() {
+        $(".collapse").collapse("hide");
+      });
     </script>
   </body>
 </html>
