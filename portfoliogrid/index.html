@@ -17,6 +17,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -243,9 +249,17 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(".port-item").click(function() {
         $(".collapse").collapse("hide");
+      });
+      $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+        e.preventDefault();
       });
     </script>
   </body>
